@@ -1,0 +1,9 @@
+C:\Programlama\Github\Grafik-Islemleri\GrafikIslemleri\GrafikIslemleri\bin\Debug\GrafikIslemleri.exe.config
+C:\Programlama\Github\Grafik-Islemleri\GrafikIslemleri\GrafikIslemleri\bin\Debug\GrafikIslemleri.exe
+C:\Programlama\Github\Grafik-Islemleri\GrafikIslemleri\GrafikIslemleri\bin\Debug\GrafikIslemleri.pdb
+C:\Programlama\Github\Grafik-Islemleri\GrafikIslemleri\GrafikIslemleri\obj\Debug\GrafikIslemleri.csprojAssemblyReference.cache
+C:\Programlama\Github\Grafik-Islemleri\GrafikIslemleri\GrafikIslemleri\obj\Debug\GrafikIslemleri.Properties.Resources.resources
+C:\Programlama\Github\Grafik-Islemleri\GrafikIslemleri\GrafikIslemleri\obj\Debug\GrafikIslemleri.csproj.GenerateResource.cache
+C:\Programlama\Github\Grafik-Islemleri\GrafikIslemleri\GrafikIslemleri\obj\Debug\GrafikIslemleri.exe
+C:\Programlama\Github\Grafik-Islemleri\GrafikIslemleri\GrafikIslemleri\obj\Debug\GrafikIslemleri.pdb
+C:\Programlama\Github\Grafik-Islemleri\GrafikIslemleri\GrafikIslemleri\obj\Debug\GrafikIslemleri.Form1.resources
