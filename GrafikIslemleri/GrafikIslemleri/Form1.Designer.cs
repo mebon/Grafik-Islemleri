@@ -29,37 +29,44 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.buttonGoruntuYukle = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.buttonDaralt = new System.Windows.Forms.Button();
+            this.buttonGenislet = new System.Windows.Forms.Button();
+            this.buttonUfalt = new System.Windows.Forms.Button();
+            this.buttonBuyult = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.buttonSag = new System.Windows.Forms.Button();
+            this.buttonAsagi = new System.Windows.Forms.Button();
+            this.buttonSola = new System.Windows.Forms.Button();
+            this.buttonYukari = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.buttonTekrarkucult = new System.Windows.Forms.Button();
+            this.buttonTekrarBuyult = new System.Windows.Forms.Button();
+            this.textBoxBuyutmeTekrari = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.buttonOransal = new System.Windows.Forms.Button();
+            this.textBoxOransal = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.buttonGoruntuYukle = new System.Windows.Forms.Button();
-            this.buttonYukari = new System.Windows.Forms.Button();
-            this.buttonSola = new System.Windows.Forms.Button();
-            this.buttonAsagi = new System.Windows.Forms.Button();
-            this.buttonSag = new System.Windows.Forms.Button();
-            this.buttonBuyult = new System.Windows.Forms.Button();
-            this.buttonUfalt = new System.Windows.Forms.Button();
-            this.textBoxBuyutmeTekrari = new System.Windows.Forms.TextBox();
-            this.buttonTekrarBuyult = new System.Windows.Forms.Button();
-            this.buttonTekrarkucult = new System.Windows.Forms.Button();
-            this.textBoxOransal = new System.Windows.Forms.TextBox();
-            this.buttonOransal = new System.Windows.Forms.Button();
-            this.buttonSaatYonu = new System.Windows.Forms.Button();
             this.buttonSaatTersi = new System.Windows.Forms.Button();
+            this.buttonSaatYonu = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
             this.pictureBox = new System.Windows.Forms.PictureBox();
             this.labelGoruntu = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.buttonGenislet = new System.Windows.Forms.Button();
-            this.buttonDaralt = new System.Windows.Forms.Button();
+            this.labelyükseklik = new System.Windows.Forms.Label();
+            this.labelwidth = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -81,6 +88,26 @@
             this.panel1.Size = new System.Drawing.Size(279, 212);
             this.panel1.TabIndex = 1;
             // 
+            // buttonGoruntuYukle
+            // 
+            this.buttonGoruntuYukle.Location = new System.Drawing.Point(87, 85);
+            this.buttonGoruntuYukle.Name = "buttonGoruntuYukle";
+            this.buttonGoruntuYukle.Size = new System.Drawing.Size(110, 23);
+            this.buttonGoruntuYukle.TabIndex = 1;
+            this.buttonGoruntuYukle.Text = "Görüntü Yükle";
+            this.buttonGoruntuYukle.UseVisualStyleBackColor = true;
+            this.buttonGoruntuYukle.Click += new System.EventHandler(this.buttonGoruntuYukle_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label1.Location = new System.Drawing.Point(4, 4);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(82, 15);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Resim Yukleme";
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ActiveBorder;
@@ -94,6 +121,56 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(279, 212);
             this.panel2.TabIndex = 2;
+            // 
+            // buttonDaralt
+            // 
+            this.buttonDaralt.Location = new System.Drawing.Point(173, 133);
+            this.buttonDaralt.Name = "buttonDaralt";
+            this.buttonDaralt.Size = new System.Drawing.Size(75, 23);
+            this.buttonDaralt.TabIndex = 5;
+            this.buttonDaralt.Text = "Daralt";
+            this.buttonDaralt.UseVisualStyleBackColor = true;
+            this.buttonDaralt.Click += new System.EventHandler(this.buttonDaralt_Click);
+            // 
+            // buttonGenislet
+            // 
+            this.buttonGenislet.Location = new System.Drawing.Point(173, 62);
+            this.buttonGenislet.Name = "buttonGenislet";
+            this.buttonGenislet.Size = new System.Drawing.Size(75, 23);
+            this.buttonGenislet.TabIndex = 4;
+            this.buttonGenislet.Text = "Genişlet";
+            this.buttonGenislet.UseVisualStyleBackColor = true;
+            this.buttonGenislet.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // buttonUfalt
+            // 
+            this.buttonUfalt.Location = new System.Drawing.Point(27, 133);
+            this.buttonUfalt.Name = "buttonUfalt";
+            this.buttonUfalt.Size = new System.Drawing.Size(75, 23);
+            this.buttonUfalt.TabIndex = 3;
+            this.buttonUfalt.Text = "Ufalt";
+            this.buttonUfalt.UseVisualStyleBackColor = true;
+            this.buttonUfalt.Click += new System.EventHandler(this.buttonUfalt_Click);
+            // 
+            // buttonBuyult
+            // 
+            this.buttonBuyult.Location = new System.Drawing.Point(27, 62);
+            this.buttonBuyult.Name = "buttonBuyult";
+            this.buttonBuyult.Size = new System.Drawing.Size(75, 23);
+            this.buttonBuyult.TabIndex = 2;
+            this.buttonBuyult.Text = "Uzat";
+            this.buttonBuyult.UseVisualStyleBackColor = true;
+            this.buttonBuyult.Click += new System.EventHandler(this.buttonBuyult_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label2.Location = new System.Drawing.Point(3, 5);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(99, 15);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Büyültme Küçültme";
             // 
             // panel3
             // 
@@ -109,6 +186,56 @@
             this.panel3.Size = new System.Drawing.Size(279, 212);
             this.panel3.TabIndex = 2;
             // 
+            // buttonSag
+            // 
+            this.buttonSag.Location = new System.Drawing.Point(173, 103);
+            this.buttonSag.Name = "buttonSag";
+            this.buttonSag.Size = new System.Drawing.Size(75, 23);
+            this.buttonSag.TabIndex = 5;
+            this.buttonSag.Text = "Sağa";
+            this.buttonSag.UseVisualStyleBackColor = true;
+            this.buttonSag.Click += new System.EventHandler(this.buttonSag_Click);
+            // 
+            // buttonAsagi
+            // 
+            this.buttonAsagi.Location = new System.Drawing.Point(101, 156);
+            this.buttonAsagi.Name = "buttonAsagi";
+            this.buttonAsagi.Size = new System.Drawing.Size(75, 23);
+            this.buttonAsagi.TabIndex = 4;
+            this.buttonAsagi.Text = "Aşağı";
+            this.buttonAsagi.UseVisualStyleBackColor = true;
+            this.buttonAsagi.Click += new System.EventHandler(this.buttonAsagi_Click);
+            // 
+            // buttonSola
+            // 
+            this.buttonSola.Location = new System.Drawing.Point(27, 103);
+            this.buttonSola.Name = "buttonSola";
+            this.buttonSola.Size = new System.Drawing.Size(75, 23);
+            this.buttonSola.TabIndex = 3;
+            this.buttonSola.Text = "Sola";
+            this.buttonSola.UseVisualStyleBackColor = true;
+            this.buttonSola.Click += new System.EventHandler(this.buttonSola_Click);
+            // 
+            // buttonYukari
+            // 
+            this.buttonYukari.Location = new System.Drawing.Point(101, 47);
+            this.buttonYukari.Name = "buttonYukari";
+            this.buttonYukari.Size = new System.Drawing.Size(75, 23);
+            this.buttonYukari.TabIndex = 2;
+            this.buttonYukari.Text = "Yukarı";
+            this.buttonYukari.UseVisualStyleBackColor = true;
+            this.buttonYukari.Click += new System.EventHandler(this.buttonYukari_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label3.Location = new System.Drawing.Point(4, 4);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(48, 15);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Öteleme";
+            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.SystemColors.ActiveBorder;
@@ -122,35 +249,33 @@
             this.panel4.Size = new System.Drawing.Size(279, 212);
             this.panel4.TabIndex = 3;
             // 
-            // label1
+            // buttonTekrarkucult
             // 
-            this.label1.AutoSize = true;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.Location = new System.Drawing.Point(4, 4);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Resim Yukleme";
+            this.buttonTekrarkucult.Location = new System.Drawing.Point(101, 133);
+            this.buttonTekrarkucult.Name = "buttonTekrarkucult";
+            this.buttonTekrarkucult.Size = new System.Drawing.Size(75, 23);
+            this.buttonTekrarkucult.TabIndex = 4;
+            this.buttonTekrarkucult.Text = "Kucult";
+            this.buttonTekrarkucult.UseVisualStyleBackColor = true;
+            this.buttonTekrarkucult.Click += new System.EventHandler(this.buttonTekrarkucult_Click);
             // 
-            // label2
+            // buttonTekrarBuyult
             // 
-            this.label2.AutoSize = true;
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label2.Location = new System.Drawing.Point(3, 5);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(99, 15);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Büyültme Küçültme";
+            this.buttonTekrarBuyult.Location = new System.Drawing.Point(101, 62);
+            this.buttonTekrarBuyult.Name = "buttonTekrarBuyult";
+            this.buttonTekrarBuyult.Size = new System.Drawing.Size(75, 23);
+            this.buttonTekrarBuyult.TabIndex = 3;
+            this.buttonTekrarBuyult.Text = "Büyült";
+            this.buttonTekrarBuyult.UseVisualStyleBackColor = true;
+            this.buttonTekrarBuyult.Click += new System.EventHandler(this.buttonTekrarBuyult_Click);
             // 
-            // label3
+            // textBoxBuyutmeTekrari
             // 
-            this.label3.AutoSize = true;
-            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label3.Location = new System.Drawing.Point(4, 4);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(48, 15);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Öteleme";
+            this.textBoxBuyutmeTekrari.Location = new System.Drawing.Point(88, 100);
+            this.textBoxBuyutmeTekrari.Name = "textBoxBuyutmeTekrari";
+            this.textBoxBuyutmeTekrari.Size = new System.Drawing.Size(100, 20);
+            this.textBoxBuyutmeTekrari.TabIndex = 2;
+            this.textBoxBuyutmeTekrari.Text = "1";
             // 
             // label4
             // 
@@ -166,6 +291,7 @@
             // 
             this.panel5.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.label11);
             this.panel5.Controls.Add(this.buttonOransal);
             this.panel5.Controls.Add(this.textBoxOransal);
             this.panel5.Controls.Add(this.label5);
@@ -173,6 +299,24 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(279, 212);
             this.panel5.TabIndex = 4;
+            // 
+            // buttonOransal
+            // 
+            this.buttonOransal.Location = new System.Drawing.Point(155, 95);
+            this.buttonOransal.Name = "buttonOransal";
+            this.buttonOransal.Size = new System.Drawing.Size(94, 23);
+            this.buttonOransal.TabIndex = 3;
+            this.buttonOransal.Text = "Oransal Büyült";
+            this.buttonOransal.UseVisualStyleBackColor = true;
+            this.buttonOransal.Click += new System.EventHandler(this.buttonOransal_Click);
+            // 
+            // textBoxOransal
+            // 
+            this.textBoxOransal.Location = new System.Drawing.Point(32, 97);
+            this.textBoxOransal.Name = "textBoxOransal";
+            this.textBoxOransal.Size = new System.Drawing.Size(100, 20);
+            this.textBoxOransal.TabIndex = 2;
+            this.textBoxOransal.Text = "0,5";
             // 
             // label5
             // 
@@ -196,129 +340,15 @@
             this.panel6.Size = new System.Drawing.Size(279, 212);
             this.panel6.TabIndex = 5;
             // 
-            // label6
+            // buttonSaatTersi
             // 
-            this.label6.AutoSize = true;
-            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label6.Location = new System.Drawing.Point(3, 4);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(58, 15);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Döndürme";
-            // 
-            // buttonGoruntuYukle
-            // 
-            this.buttonGoruntuYukle.Location = new System.Drawing.Point(87, 85);
-            this.buttonGoruntuYukle.Name = "buttonGoruntuYukle";
-            this.buttonGoruntuYukle.Size = new System.Drawing.Size(110, 23);
-            this.buttonGoruntuYukle.TabIndex = 1;
-            this.buttonGoruntuYukle.Text = "Görüntü Yükle";
-            this.buttonGoruntuYukle.UseVisualStyleBackColor = true;
-            this.buttonGoruntuYukle.Click += new System.EventHandler(this.buttonGoruntuYukle_Click);
-            // 
-            // buttonYukari
-            // 
-            this.buttonYukari.Location = new System.Drawing.Point(101, 47);
-            this.buttonYukari.Name = "buttonYukari";
-            this.buttonYukari.Size = new System.Drawing.Size(75, 23);
-            this.buttonYukari.TabIndex = 2;
-            this.buttonYukari.Text = "Yukarı";
-            this.buttonYukari.UseVisualStyleBackColor = true;
-            this.buttonYukari.Click += new System.EventHandler(this.buttonYukari_Click);
-            // 
-            // buttonSola
-            // 
-            this.buttonSola.Location = new System.Drawing.Point(27, 103);
-            this.buttonSola.Name = "buttonSola";
-            this.buttonSola.Size = new System.Drawing.Size(75, 23);
-            this.buttonSola.TabIndex = 3;
-            this.buttonSola.Text = "Sola";
-            this.buttonSola.UseVisualStyleBackColor = true;
-            this.buttonSola.Click += new System.EventHandler(this.buttonSola_Click);
-            // 
-            // buttonAsagi
-            // 
-            this.buttonAsagi.Location = new System.Drawing.Point(101, 156);
-            this.buttonAsagi.Name = "buttonAsagi";
-            this.buttonAsagi.Size = new System.Drawing.Size(75, 23);
-            this.buttonAsagi.TabIndex = 4;
-            this.buttonAsagi.Text = "Aşağı";
-            this.buttonAsagi.UseVisualStyleBackColor = true;
-            this.buttonAsagi.Click += new System.EventHandler(this.buttonAsagi_Click);
-            // 
-            // buttonSag
-            // 
-            this.buttonSag.Location = new System.Drawing.Point(173, 103);
-            this.buttonSag.Name = "buttonSag";
-            this.buttonSag.Size = new System.Drawing.Size(75, 23);
-            this.buttonSag.TabIndex = 5;
-            this.buttonSag.Text = "Sağa";
-            this.buttonSag.UseVisualStyleBackColor = true;
-            this.buttonSag.Click += new System.EventHandler(this.buttonSag_Click);
-            // 
-            // buttonBuyult
-            // 
-            this.buttonBuyult.Location = new System.Drawing.Point(27, 62);
-            this.buttonBuyult.Name = "buttonBuyult";
-            this.buttonBuyult.Size = new System.Drawing.Size(75, 23);
-            this.buttonBuyult.TabIndex = 2;
-            this.buttonBuyult.Text = "Uzat";
-            this.buttonBuyult.UseVisualStyleBackColor = true;
-            this.buttonBuyult.Click += new System.EventHandler(this.buttonBuyult_Click);
-            // 
-            // buttonUfalt
-            // 
-            this.buttonUfalt.Location = new System.Drawing.Point(27, 133);
-            this.buttonUfalt.Name = "buttonUfalt";
-            this.buttonUfalt.Size = new System.Drawing.Size(75, 23);
-            this.buttonUfalt.TabIndex = 3;
-            this.buttonUfalt.Text = "Ufalt";
-            this.buttonUfalt.UseVisualStyleBackColor = true;
-            this.buttonUfalt.Click += new System.EventHandler(this.buttonUfalt_Click);
-            // 
-            // textBoxBuyutmeTekrari
-            // 
-            this.textBoxBuyutmeTekrari.Location = new System.Drawing.Point(88, 100);
-            this.textBoxBuyutmeTekrari.Name = "textBoxBuyutmeTekrari";
-            this.textBoxBuyutmeTekrari.Size = new System.Drawing.Size(100, 20);
-            this.textBoxBuyutmeTekrari.TabIndex = 2;
-            // 
-            // buttonTekrarBuyult
-            // 
-            this.buttonTekrarBuyult.Location = new System.Drawing.Point(101, 62);
-            this.buttonTekrarBuyult.Name = "buttonTekrarBuyult";
-            this.buttonTekrarBuyult.Size = new System.Drawing.Size(75, 23);
-            this.buttonTekrarBuyult.TabIndex = 3;
-            this.buttonTekrarBuyult.Text = "Büyült";
-            this.buttonTekrarBuyult.UseVisualStyleBackColor = true;
-            this.buttonTekrarBuyult.Click += new System.EventHandler(this.buttonTekrarBuyult_Click);
-            // 
-            // buttonTekrarkucult
-            // 
-            this.buttonTekrarkucult.Location = new System.Drawing.Point(101, 133);
-            this.buttonTekrarkucult.Name = "buttonTekrarkucult";
-            this.buttonTekrarkucult.Size = new System.Drawing.Size(75, 23);
-            this.buttonTekrarkucult.TabIndex = 4;
-            this.buttonTekrarkucult.Text = "Kucult";
-            this.buttonTekrarkucult.UseVisualStyleBackColor = true;
-            this.buttonTekrarkucult.Click += new System.EventHandler(this.buttonTekrarkucult_Click);
-            // 
-            // textBoxOransal
-            // 
-            this.textBoxOransal.Location = new System.Drawing.Point(32, 97);
-            this.textBoxOransal.Name = "textBoxOransal";
-            this.textBoxOransal.Size = new System.Drawing.Size(100, 20);
-            this.textBoxOransal.TabIndex = 2;
-            // 
-            // buttonOransal
-            // 
-            this.buttonOransal.Location = new System.Drawing.Point(155, 95);
-            this.buttonOransal.Name = "buttonOransal";
-            this.buttonOransal.Size = new System.Drawing.Size(94, 23);
-            this.buttonOransal.TabIndex = 3;
-            this.buttonOransal.Text = "Oransal Büyült";
-            this.buttonOransal.UseVisualStyleBackColor = true;
-            this.buttonOransal.Click += new System.EventHandler(this.buttonOransal_Click);
+            this.buttonSaatTersi.Location = new System.Drawing.Point(66, 133);
+            this.buttonSaatTersi.Name = "buttonSaatTersi";
+            this.buttonSaatTersi.Size = new System.Drawing.Size(153, 23);
+            this.buttonSaatTersi.TabIndex = 3;
+            this.buttonSaatTersi.Text = "Saat Tersi Yönünde Döndür";
+            this.buttonSaatTersi.UseVisualStyleBackColor = true;
+            this.buttonSaatTersi.Click += new System.EventHandler(this.buttonSaatTersi_Click);
             // 
             // buttonSaatYonu
             // 
@@ -330,21 +360,22 @@
             this.buttonSaatYonu.UseVisualStyleBackColor = true;
             this.buttonSaatYonu.Click += new System.EventHandler(this.buttonSaatYonu_Click);
             // 
-            // buttonSaatTersi
+            // label6
             // 
-            this.buttonSaatTersi.Location = new System.Drawing.Point(66, 133);
-            this.buttonSaatTersi.Name = "buttonSaatTersi";
-            this.buttonSaatTersi.Size = new System.Drawing.Size(153, 23);
-            this.buttonSaatTersi.TabIndex = 3;
-            this.buttonSaatTersi.Text = "Saat Tersi Yönünde Döndür";
-            this.buttonSaatTersi.UseVisualStyleBackColor = true;
-            this.buttonSaatTersi.Click += new System.EventHandler(this.buttonSaatTersi_Click);
+            this.label6.AutoSize = true;
+            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label6.Location = new System.Drawing.Point(3, 4);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(58, 15);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "Döndürme";
             // 
             // pictureBox
             // 
-            this.pictureBox.Location = new System.Drawing.Point(266, 54);
+            this.pictureBox.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox.Location = new System.Drawing.Point(285, 121);
             this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(323, 303);
+            this.pictureBox.Size = new System.Drawing.Size(279, 212);
             this.pictureBox.TabIndex = 1;
             this.pictureBox.TabStop = false;
             // 
@@ -360,8 +391,13 @@
             // 
             // panel7
             // 
+            this.panel7.Controls.Add(this.label9);
+            this.panel7.Controls.Add(this.labelwidth);
+            this.panel7.Controls.Add(this.label8);
             this.panel7.Controls.Add(this.pictureBox);
+            this.panel7.Controls.Add(this.label7);
             this.panel7.Controls.Add(this.labelGoruntu);
+            this.panel7.Controls.Add(this.labelyükseklik);
             this.panel7.Location = new System.Drawing.Point(15, 12);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(849, 430);
@@ -371,31 +407,84 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // buttonGenislet
+            // labelyükseklik
             // 
-            this.buttonGenislet.Location = new System.Drawing.Point(173, 62);
-            this.buttonGenislet.Name = "buttonGenislet";
-            this.buttonGenislet.Size = new System.Drawing.Size(75, 23);
-            this.buttonGenislet.TabIndex = 4;
-            this.buttonGenislet.Text = "Genişlet";
-            this.buttonGenislet.UseVisualStyleBackColor = true;
-            this.buttonGenislet.Click += new System.EventHandler(this.button1_Click);
+            this.labelyükseklik.AutoSize = true;
+            this.labelyükseklik.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.labelyükseklik.Location = new System.Drawing.Point(67, 19);
+            this.labelyükseklik.Name = "labelyükseklik";
+            this.labelyükseklik.Size = new System.Drawing.Size(15, 15);
+            this.labelyükseklik.TabIndex = 5;
+            this.labelyükseklik.Text = "0";
             // 
-            // buttonDaralt
+            // labelwidth
             // 
-            this.buttonDaralt.Location = new System.Drawing.Point(173, 133);
-            this.buttonDaralt.Name = "buttonDaralt";
-            this.buttonDaralt.Size = new System.Drawing.Size(75, 23);
-            this.buttonDaralt.TabIndex = 5;
-            this.buttonDaralt.Text = "Daralt";
-            this.buttonDaralt.UseVisualStyleBackColor = true;
-            this.buttonDaralt.Click += new System.EventHandler(this.buttonDaralt_Click);
+            this.labelwidth.AutoSize = true;
+            this.labelwidth.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.labelwidth.Location = new System.Drawing.Point(52, 34);
+            this.labelwidth.Name = "labelwidth";
+            this.labelwidth.Size = new System.Drawing.Size(15, 15);
+            this.labelwidth.TabIndex = 6;
+            this.labelwidth.Text = "0";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label7.Location = new System.Drawing.Point(3, 19);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(64, 15);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "Yükseklik : ";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label8.Location = new System.Drawing.Point(4, 34);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(55, 15);
+            this.label8.TabIndex = 8;
+            this.label8.Text = "Genişlik : ";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label9.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label9.Location = new System.Drawing.Point(0, 415);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(194, 15);
+            this.label9.TabIndex = 9;
+            this.label9.Text = "5 pixel üzerinden işlemler gerçekleştirilir.";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label10.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label10.Location = new System.Drawing.Point(878, 663);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(271, 15);
+            this.label10.TabIndex = 10;
+            this.label10.Text = "Muhammed Emin Berkay KOCAOĞLU / 201513171070";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label11.Location = new System.Drawing.Point(30, 82);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(188, 12);
+            this.label11.TabIndex = 4;
+            this.label11.Text = "*Ondalıklı sayı yazarken \", (virgül)\" kullanınız.";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1161, 681);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel6);
@@ -423,6 +512,7 @@
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -459,6 +549,13 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Button buttonDaralt;
         private System.Windows.Forms.Button buttonGenislet;
+        private System.Windows.Forms.Label labelwidth;
+        private System.Windows.Forms.Label labelyükseklik;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
     }
 }
 
