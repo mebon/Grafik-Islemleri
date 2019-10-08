@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonGoruntuYukle = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -49,6 +50,7 @@
             this.textBoxBuyutmeTekrari = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
             this.buttonOransal = new System.Windows.Forms.Button();
             this.textBoxOransal = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -59,14 +61,26 @@
             this.pictureBox = new System.Windows.Forms.PictureBox();
             this.labelGoruntu = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.labelyükseklik = new System.Windows.Forms.Label();
-            this.labelwidth = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.labelwidth = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.labelyükseklik = new System.Windows.Forms.Label();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.buttonDaireyeCevir = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.buttonDondur = new System.Windows.Forms.Button();
+            this.buttonDurdur = new System.Windows.Forms.Button();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.panel10 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -75,6 +89,9 @@
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.panel7.SuspendLayout();
+            this.panel8.SuspendLayout();
+            this.panel9.SuspendLayout();
+            this.panel10.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -300,6 +317,16 @@
             this.panel5.Size = new System.Drawing.Size(279, 212);
             this.panel5.TabIndex = 4;
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label11.Location = new System.Drawing.Point(30, 82);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(188, 12);
+            this.label11.TabIndex = 4;
+            this.label11.Text = "*Ondalıklı sayı yazarken \", (virgül)\" kullanınız.";
+            // 
             // buttonOransal
             // 
             this.buttonOransal.Location = new System.Drawing.Point(155, 95);
@@ -332,6 +359,7 @@
             // 
             this.panel6.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel6.Controls.Add(this.panel8);
             this.panel6.Controls.Add(this.buttonSaatTersi);
             this.panel6.Controls.Add(this.buttonSaatYonu);
             this.panel6.Controls.Add(this.label6);
@@ -378,6 +406,9 @@
             this.pictureBox.Size = new System.Drawing.Size(279, 212);
             this.pictureBox.TabIndex = 1;
             this.pictureBox.TabStop = false;
+            this.pictureBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox_MouseDown);
+            this.pictureBox.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox_MouseMove);
+            this.pictureBox.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox_MouseUp);
             // 
             // labelGoruntu
             // 
@@ -403,50 +434,6 @@
             this.panel7.Size = new System.Drawing.Size(849, 430);
             this.panel7.TabIndex = 6;
             // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            // 
-            // labelyükseklik
-            // 
-            this.labelyükseklik.AutoSize = true;
-            this.labelyükseklik.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.labelyükseklik.Location = new System.Drawing.Point(67, 19);
-            this.labelyükseklik.Name = "labelyükseklik";
-            this.labelyükseklik.Size = new System.Drawing.Size(15, 15);
-            this.labelyükseklik.TabIndex = 5;
-            this.labelyükseklik.Text = "0";
-            // 
-            // labelwidth
-            // 
-            this.labelwidth.AutoSize = true;
-            this.labelwidth.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.labelwidth.Location = new System.Drawing.Point(52, 34);
-            this.labelwidth.Name = "labelwidth";
-            this.labelwidth.Size = new System.Drawing.Size(15, 15);
-            this.labelwidth.TabIndex = 6;
-            this.labelwidth.Text = "0";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label7.Location = new System.Drawing.Point(3, 19);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(64, 15);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "Yükseklik : ";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label8.Location = new System.Drawing.Point(4, 34);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(55, 15);
-            this.label8.TabIndex = 8;
-            this.label8.Text = "Genişlik : ";
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -458,33 +445,187 @@
             this.label9.TabIndex = 9;
             this.label9.Text = "5 pixel üzerinden işlemler gerçekleştirilir.";
             // 
+            // labelwidth
+            // 
+            this.labelwidth.AutoSize = true;
+            this.labelwidth.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.labelwidth.Location = new System.Drawing.Point(52, 34);
+            this.labelwidth.Name = "labelwidth";
+            this.labelwidth.Size = new System.Drawing.Size(15, 15);
+            this.labelwidth.TabIndex = 6;
+            this.labelwidth.Text = "0";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label8.Location = new System.Drawing.Point(4, 34);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(55, 15);
+            this.label8.TabIndex = 8;
+            this.label8.Text = "Genişlik : ";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label7.Location = new System.Drawing.Point(3, 19);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(64, 15);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "Yükseklik : ";
+            // 
+            // labelyükseklik
+            // 
+            this.labelyükseklik.AutoSize = true;
+            this.labelyükseklik.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.labelyükseklik.Location = new System.Drawing.Point(67, 19);
+            this.labelyükseklik.Name = "labelyükseklik";
+            this.labelyükseklik.Size = new System.Drawing.Size(15, 15);
+            this.labelyükseklik.TabIndex = 5;
+            this.labelyükseklik.Text = "0";
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // buttonDaireyeCevir
+            // 
+            this.buttonDaireyeCevir.Location = new System.Drawing.Point(0, 2);
+            this.buttonDaireyeCevir.Name = "buttonDaireyeCevir";
+            this.buttonDaireyeCevir.Size = new System.Drawing.Size(279, 23);
+            this.buttonDaireyeCevir.TabIndex = 11;
+            this.buttonDaireyeCevir.Text = "Daireye Çevir";
+            this.buttonDaireyeCevir.UseVisualStyleBackColor = true;
+            this.buttonDaireyeCevir.Click += new System.EventHandler(this.buttonDaireyeCevir_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // buttonDondur
+            // 
+            this.buttonDondur.Location = new System.Drawing.Point(284, 2);
+            this.buttonDondur.Name = "buttonDondur";
+            this.buttonDondur.Size = new System.Drawing.Size(133, 23);
+            this.buttonDondur.TabIndex = 12;
+            this.buttonDondur.Text = "Döndür";
+            this.buttonDondur.UseVisualStyleBackColor = true;
+            this.buttonDondur.Click += new System.EventHandler(this.buttonDondur_Click);
+            // 
+            // buttonDurdur
+            // 
+            this.buttonDurdur.Location = new System.Drawing.Point(429, 2);
+            this.buttonDurdur.Name = "buttonDurdur";
+            this.buttonDurdur.Size = new System.Drawing.Size(133, 23);
+            this.buttonDurdur.TabIndex = 13;
+            this.buttonDurdur.Text = "Durdur";
+            this.buttonDurdur.UseVisualStyleBackColor = true;
+            this.buttonDurdur.Click += new System.EventHandler(this.buttonDurdur_Click);
+            // 
+            // timer2
+            // 
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel8.Controls.Add(this.panel9);
+            this.panel8.Controls.Add(this.button1);
+            this.panel8.Controls.Add(this.button2);
+            this.panel8.Controls.Add(this.label10);
+            this.panel8.Location = new System.Drawing.Point(-1, -1);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(279, 212);
+            this.panel8.TabIndex = 6;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(66, 133);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(153, 23);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Saat Tersi Yönünde Döndür";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(66, 62);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(153, 23);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "Saat Yönünde Döndür";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label10.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label10.Location = new System.Drawing.Point(878, 663);
+            this.label10.Location = new System.Drawing.Point(3, 4);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(271, 15);
-            this.label10.TabIndex = 10;
-            this.label10.Text = "Muhammed Emin Berkay KOCAOĞLU / 201513171070";
+            this.label10.Size = new System.Drawing.Size(58, 15);
+            this.label10.TabIndex = 1;
+            this.label10.Text = "Döndürme";
             // 
-            // label11
+            // panel9
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label11.Location = new System.Drawing.Point(30, 82);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(188, 12);
-            this.label11.TabIndex = 4;
-            this.label11.Text = "*Ondalıklı sayı yazarken \", (virgül)\" kullanınız.";
+            this.panel9.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel9.Controls.Add(this.button3);
+            this.panel9.Controls.Add(this.button4);
+            this.panel9.Controls.Add(this.label12);
+            this.panel9.Location = new System.Drawing.Point(-1, -1);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(279, 212);
+            this.panel9.TabIndex = 7;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(66, 133);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(153, 23);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "Saat Tersi Yönünde Döndür";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(66, 62);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(153, 23);
+            this.button4.TabIndex = 2;
+            this.button4.Text = "Saat Yönünde Döndür";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label12.Location = new System.Drawing.Point(3, 4);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(58, 15);
+            this.label12.TabIndex = 1;
+            this.label12.Text = "Döndürme";
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel10.Controls.Add(this.buttonDaireyeCevir);
+            this.panel10.Controls.Add(this.buttonDurdur);
+            this.panel10.Controls.Add(this.buttonDondur);
+            this.panel10.Location = new System.Drawing.Point(15, 663);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(564, 29);
+            this.panel10.TabIndex = 4;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1161, 681);
-            this.Controls.Add(this.label10);
+            this.ClientSize = new System.Drawing.Size(1161, 694);
+            this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel6);
@@ -511,8 +652,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
+            this.panel10.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -554,8 +699,21 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button buttonDaireyeCevir;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button buttonDondur;
+        private System.Windows.Forms.Button buttonDurdur;
+        private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Panel panel10;
     }
 }
 
